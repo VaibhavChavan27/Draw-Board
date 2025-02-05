@@ -1,7 +1,13 @@
 const boxes1 = document.querySelectorAll(".child");
 const erasebutton = document.getElementById("erase-btn")
 const inputs = document.getElementById("my-input")
+
+const boardMain = document.getElementById("board-main")
+const downloadBtn = document.getElementById("download-btn");
+
 // const color = "red"
+
+downloadBtn.onclick = download ;
 
 erasebutton.onclick = () => {
   color = "white";
@@ -34,3 +40,9 @@ function setcolor(){
    color = userChoice ;
 
 }
+
+ function download(){
+     
+    let downloadfile = boardMain.innerHTML ;
+
+ };
